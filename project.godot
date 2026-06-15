@@ -11,8 +11,16 @@ config_version=5
 [application]
 
 config/name="gayjam"
+run/main_scene="uid://nsbmhoamn8iq"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/characters/mainCharacter/icon.svg"
+
+[input]
+
+Moverse={
+"deadzone": 0.2,
+"events": []
+}
 
 [physics]
 
