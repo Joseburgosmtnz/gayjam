@@ -13,13 +13,12 @@ func _on_body_entered(body : Node2D) -> void:
 	if body.is_in_group("Player"):
 		_on_interact(body)
 
-#Esta funcion la sobreescriben las clases hijas para diferenciar
+#Se sobreescribe en las clases hijas para diferenciar
 #las interacciones
 func _on_interact(player : Node2D) -> void:
 	emit_signal("interacted", player)
 	_play_interaction_animation()
 	
-#Aqui se ejecuta una animacion comun aunque tambien se puede
-#sobreescribir
+#Ejecutar la animacion de interaccion
 func _play_interaction_animation() -> void:
 	pass
