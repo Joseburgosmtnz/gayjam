@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://brcs3qntd74c2"]
+
+[ext_resource type="Texture2D" uid="uid://b6em01ul12x2a" path="res://assets/characters/mainCharacter/icon.svg" id="1_7bq0a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_au47s"]
+size = Vector2(3000, 170)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2lnch"]
+load_path = "res://.godot/imported/icon.svg-7a33a59016628e694164f71e9e7fdf8a.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7bq0a"]
+size = Vector2(200, 679)
+
+[node name="Walls" type="StaticBody2D" unique_id=1265586795]
+
+[node name="tope" type="CollisionShape2D" parent="." unique_id=2114732081]
+position = Vector2(2, -419)
+shape = SubResource("RectangleShape2D_au47s")
+debug_color = Color(0.6585348, 0.3216205, 1, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=277380545]
+position = Vector2(-1.0000191, -411)
+scale = Vector2(23.375, 1.15625)
+texture = SubResource("CompressedTexture2D_2lnch")
+
+[node name="abajo" type="CollisionShape2D" parent="." unique_id=1212041405]
+position = Vector2(2, 419)
+shape = SubResource("RectangleShape2D_au47s")
+debug_color = Color(0.6585348, 0.3216205, 1, 0.41960785)
+
+[node name="Sprite2DAbajo" type="Sprite2D" parent="." unique_id=911926661]
+position = Vector2(-1, 411)
+scale = Vector2(23.375, 1.15625)
+texture = SubResource("CompressedTexture2D_2lnch")
+
+[node name="izquierda" type="CollisionShape2D" parent="." unique_id=353038324]
+position = Vector2(-1395, 7.5)
+shape = SubResource("RectangleShape2D_7bq0a")
+
+[node name="Sprite2DIzquierda" type="Sprite2D" parent="." unique_id=1444479341]
+position = Vector2(-1400.5, 5.5)
+scale = Vector2(1.5234375, 5.2578125)
+texture = ExtResource("1_7bq0a")
+
+[node name="izquierda2" type="CollisionShape2D" parent="." unique_id=235129370]
+position = Vector2(1395, 7.5)
+shape = SubResource("RectangleShape2D_7bq0a")
+
+[node name="Sprite2DIzquierda2" type="Sprite2D" parent="." unique_id=1916945864]
+position = Vector2(1400.5, 5.5)
+scale = Vector2(1.5234375, 5.2578125)
+texture = ExtResource("1_7bq0a")
