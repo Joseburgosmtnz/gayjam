@@ -1,20 +1,15 @@
 extends Node2D
+ 
+@export var speed = 400
 
-class_name CharacterMovement;
+@export var papa: CharacterBody2D;
 
-var step: int;
-# Called when the node enters the scene tree for the first time.
-func _input(event):
-	if event is InputEventKey and event.pressed:
-		var papa = get_parent();
-		if event.keycode == KEY_UP:
-			papa.position.y -= step
-		if event.keycode == KEY_DOWN:
-			papa.position.y += step
-		if event.keycode == KEY_LEFT:
-			papa.position.x -= step
-		if event.keycode == KEY_RIGHT:
-			papa.position.x += step
-
-func changeStep (newStep : int) :
-	step = newStep;
+func get_input():
+	look_at(get_global_mouse_position())
+	papa.velocity = transform.x * Input.get_axis("forward", "backwards") * speed
+	print('input')
+	print(papa)
+func _physics_process(_delta):
+	get_input()
+	papa.move_and_slide()
+	print(papa.velocity)
