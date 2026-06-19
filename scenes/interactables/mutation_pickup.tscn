@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://bky137agmaxa3"]
 
 [ext_resource type="Script" uid="uid://ctinu0syvgumx" path="res://scenes/interactables/mutation_pickup.gd" id="1_lpsil"]
+[ext_resource type="Texture2D" uid="uid://b6em01ul12x2a" path="res://assets/characters/mainCharacter/icon.svg" id="2_2bmeb"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_t14qh"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4ias"]
+size = Vector2(130, 130)
 
 [node name="MutationPickUp" type="Area2D" unique_id=730955900]
 script = ExtResource("1_lpsil")
 metadata/_custom_type_script = "uid://owmn6b2k0na2"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=683883158]
-shape = SubResource("CircleShape2D_t14qh")
+shape = SubResource("RectangleShape2D_a4ias")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1764064739]
+texture = ExtResource("2_2bmeb")
