@@ -32,3 +32,5 @@ mutation_required = SubResource("Resource_o6xl0")
 [node name="MutationPickUp" parent="." unique_id=730955900 instance=ExtResource("6_tefeu")]
 position = Vector2(-398, 7)
 mutation = SubResource("Resource_tefeu")
+
+[node name="Walls2" type="Node2D" parent="." unique_id=73658199]
