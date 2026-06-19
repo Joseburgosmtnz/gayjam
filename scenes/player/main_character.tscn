@@ -6,8 +6,9 @@
 [sub_resource type="GDScript" id="GDScript_todl4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8d5w8"]
+radius = 100.0
 
-[node name="MainCharacter" type="CharacterBody2D" unique_id=1780575402]
+[node name="MainCharacter" type="CharacterBody2D" unique_id=1780575402 groups=["Player"]]
 script = SubResource("GDScript_todl4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1847729948]
