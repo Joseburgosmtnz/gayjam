@@ -17,7 +17,11 @@ func _on_body_entered(body : Node2D) -> void:
 #las interacciones
 func _on_interact(player : Node2D) -> void:
 	emit_signal("interacted", player)
+	_on_interacted(player)
 	_play_interaction_animation()
+	
+func _on_interacted(player: Node2D) -> void:
+	pass
 	
 #Ejecutar la animacion de interaccion
 func _play_interaction_animation() -> void:
