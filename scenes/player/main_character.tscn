@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b6em01ul12x2a" path="res://assets/characters/mainCharacter/icon.svg" id="1_nrcqd"]
 [ext_resource type="SpriteFrames" uid="uid://c6mbnfjl2idja" path="res://resources/animated sprites/ameba_sprite_sheet.tres" id="3_a25yj"]
 
-[node name="mainCharacter" type="Node2D" unique_id=560852654]
+[node name="MainCharacter" type="Node2D" unique_id=560852654]
 script = ExtResource("1_ig48j")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=631267187]
