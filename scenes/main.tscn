@@ -11,4 +11,4 @@
 script = ExtResource("2_0wfyh")
 mutations = Array[ExtResource("3_sugp2")]([])
 
-[node name="TopWall" parent="." unique_id=1265586795 instance=ExtResource("4_jyhfs")]
+[node name="Walls" parent="." unique_id=1265586795 instance=ExtResource("4_jyhfs")]
