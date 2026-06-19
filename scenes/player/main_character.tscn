@@ -19,3 +19,5 @@ papa = NodePath("..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=411371952]
 shape = SubResource("CircleShape2D_8d5w8")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=206548355]
