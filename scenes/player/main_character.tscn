@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bjc2oi72l1ehy" path="res://scenes/player/main_character.gd" id="1_ig48j"]
 [ext_resource type="Texture2D" uid="uid://b6em01ul12x2a" path="res://assets/characters/mainCharacter/icon.svg" id="1_nrcqd"]
+[ext_resource type="SpriteFrames" uid="uid://c6mbnfjl2idja" path="res://resources/animated sprites/ameba_sprite_sheet.tres" id="3_a25yj"]
 
 [node name="mainCharacter" type="Node2D" unique_id=560852654]
 script = ExtResource("1_ig48j")
@@ -10,4 +11,8 @@ script = ExtResource("1_ig48j")
 anchor_mode = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1801537765]
+visible = false
 texture = ExtResource("1_nrcqd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1847729948]
+sprite_frames = ExtResource("3_a25yj")
