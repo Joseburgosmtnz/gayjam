@@ -7,7 +7,7 @@ class_name Breakable
 #Se asigna una mutacion para que se destruya
 @export var mutation_counter : Mutation
 
-func _on_interact(player : Node2D) -> void:
+func _on_interacted(player : Node2D) -> void:
 	#Comprobamos que el jugador posea la mutacion counter
 		#si la tiene ejecutamos la animacion de destruccion
 	pass
