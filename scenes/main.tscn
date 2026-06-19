@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://c48llbckm0kvf" path="res://scenes/player/main_character.gd" id="2_0wfyh"]
 [ext_resource type="Script" uid="uid://pthluwe7a702" path="res://resources/mutation.gd" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://brcs3qntd74c2" path="res://scenes/walls/walls.tscn" id="4_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://chacum6w6lqyg" path="res://scenes/interactables/breakable.tscn" id="5_tbgi4"]
 
 [node name="Main" type="Node" unique_id=1242729552]
 
@@ -14,5 +13,4 @@ mutations = Array[ExtResource("3_sugp2")]([])
 
 [node name="Walls" parent="." unique_id=1265586795 instance=ExtResource("4_jyhfs")]
 
-[node name="Breakable" parent="." unique_id=761423331 instance=ExtResource("5_tbgi4")]
-position = Vector2(464, 73)
+[node name="Walls2" type="Node2D" parent="." unique_id=73658199]
