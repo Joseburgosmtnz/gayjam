@@ -20,7 +20,7 @@ metadata/_custom_type_script = "uid://pthluwe7a702"
 position = Vector2(0, 5)
 
 [node name="Breakable" parent="." unique_id=761423331 instance=ExtResource("4_tbgi4")]
-position = Vector2(-627, 2567)
+position = Vector2(2029, -617)
 mutation_required = SubResource("Resource_o6xl0")
 
 [node name="Muros" parent="." unique_id=899844250 instance=ExtResource("6_o6xl0")]

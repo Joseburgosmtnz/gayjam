@@ -18,7 +18,14 @@ func _on_interacted(player : Node2D) -> void:
 	print("El jugador adquiere la mutación")
 #	Comprobar que hay mutation_resource
 	player.mutations.append(mutation_resource)
+	var m = mutation_scene.instantiate()
+	m.get_node("AnimatedSprite2D").sprite_frames = mutation_resource.sprite_frames
 	
-	player.add_child(mutation_scene.instantiate())
+	m.get_node("AnimatedSprite2D").play("default")
+	m.rotation = randf_range(0, 360)
+	var random_scale = randf_range(0.2, 0.8)
+	m.scale = Vector2(random_scale, random_scale)
+	m.position = Vector2(randf_range(-75, 75), randf_range(-75, 75))
+	player.add_child(m)
 	
 	_play_interaction_animation()
