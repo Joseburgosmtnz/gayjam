@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://thfombhe2yp"]
+
+[ext_resource type="PackedScene" uid="uid://brcs3qntd74c2" path="res://scenes/walls/walls.tscn" id="1_br8hr"]
+[ext_resource type="PackedScene" uid="uid://don44wiyjjrk6" path="res://scenes/walls/walls2.tscn" id="2_no5ke"]
+[ext_resource type="PackedScene" uid="uid://c1ntwca3fdj5f" path="res://scenes/walls/walls3.tscn" id="3_ihqb0"]
+
+[node name="Muros" type="Node2D" unique_id=899844250]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1377553676]
+position = Vector2(-944, 618)
+
+[node name="muro" type="Node2D" parent="Node2D" unique_id=591666721]
+
+[node name="Walls" parent="Node2D/muro" unique_id=1265586795 instance=ExtResource("1_br8hr")]
+
+[node name="mediano" parent="Node2D/muro" unique_id=614759430 instance=ExtResource("2_no5ke")]
+position = Vector2(490, -8)
+
+[node name="pequeño" parent="Node2D/muro" unique_id=445347203 instance=ExtResource("3_ihqb0")]
+position = Vector2(857, -8)
+
+[node name="muro2" type="Node2D" parent="Node2D" unique_id=1798900199]
+position = Vector2(944, -618)
+
+[node name="Walls" parent="Node2D/muro2" unique_id=1937855570 instance=ExtResource("1_br8hr")]
+position = Vector2(541, 613)
+
+[node name="mediano" parent="Node2D/muro2" unique_id=1321260274 instance=ExtResource("2_no5ke")]
+position = Vector2(1031, 605)
+
+[node name="pequeño" parent="Node2D/muro2" unique_id=1613936387 instance=ExtResource("3_ihqb0")]
+position = Vector2(1398, 605)
+
+[node name="muro3" type="Node2D" parent="Node2D" unique_id=350138635]
+position = Vector2(-1463, 13)
+
+[node name="Walls" parent="Node2D/muro3" unique_id=1314465945 instance=ExtResource("1_br8hr")]
+
+[node name="mediano" parent="Node2D/muro3" unique_id=182167682 instance=ExtResource("2_no5ke")]
+position = Vector2(490, -8)
+
+[node name="pequeño" parent="Node2D/muro3" unique_id=86514550 instance=ExtResource("3_ihqb0")]
+position = Vector2(857, -8)
+
+[node name="muro4" type="Node2D" parent="Node2D" unique_id=1630547065]
+position = Vector2(-9, -1188)
+
+[node name="Walls" parent="Node2D/muro4" unique_id=1884042298 instance=ExtResource("1_br8hr")]
+
+[node name="mediano" parent="Node2D/muro4" unique_id=593884708 instance=ExtResource("2_no5ke")]
+position = Vector2(490, -8)
+
+[node name="pequeño" parent="Node2D/muro4" unique_id=1438748600 instance=ExtResource("3_ihqb0")]
+position = Vector2(857, -8)
+
+[node name="muro5" type="Node2D" parent="Node2D" unique_id=256064915]
+position = Vector2(935, -1806)
+
+[node name="Walls" parent="Node2D/muro5" unique_id=269501673 instance=ExtResource("1_br8hr")]
+position = Vector2(541, 613)
+
+[node name="mediano" parent="Node2D/muro5" unique_id=1332665767 instance=ExtResource("2_no5ke")]
+position = Vector2(1031, 605)
+
+[node name="pequeño" parent="Node2D/muro5" unique_id=1119568703 instance=ExtResource("3_ihqb0")]
+position = Vector2(1398, 605)
+
+[node name="muro6" type="Node2D" parent="Node2D" unique_id=1336191848]
+position = Vector2(-1472, -1175)
+
+[node name="Walls" parent="Node2D/muro6" unique_id=1246621965 instance=ExtResource("1_br8hr")]
+
+[node name="mediano" parent="Node2D/muro6" unique_id=1818402605 instance=ExtResource("2_no5ke")]
+position = Vector2(490, -8)
+
+[node name="pequeño" parent="Node2D/muro6" unique_id=141876511 instance=ExtResource("3_ihqb0")]
+position = Vector2(857, -8)
+
+[node name="muro7" type="Node2D" parent="Node2D" unique_id=682351787]
+position = Vector2(-1472, -1175)
+rotation = -1.5707964
+
+[node name="Walls" parent="Node2D/muro7" unique_id=402201844 instance=ExtResource("1_br8hr")]
+position = Vector2(-698, -258.00003)
+
+[node name="mediano" parent="Node2D/muro7" unique_id=1340590585 instance=ExtResource("2_no5ke")]
+position = Vector2(-219, -249.00003)
+
+[node name="pequeño" parent="Node2D/muro7" unique_id=1678434532 instance=ExtResource("3_ihqb0")]
+position = Vector2(-1293.0002, 4170)
+
+[node name="muro8" type="Node2D" parent="Node2D" unique_id=639609332]
+position = Vector2(1742, 476)
+
+[node name="Walls" parent="Node2D/muro8" unique_id=532310638 instance=ExtResource("1_br8hr")]
+
+[node name="mediano" parent="Node2D/muro8" unique_id=1165462274 instance=ExtResource("2_no5ke")]
+position = Vector2(490, -8)
+
+[node name="pequeño" parent="Node2D/muro8" unique_id=545726273 instance=ExtResource("3_ihqb0")]
+position = Vector2(857, -8)
+
+[node name="muro9" type="Node2D" parent="Node2D" unique_id=545035331]
+position = Vector2(294, 469)
+
+[node name="Walls" parent="Node2D/muro9" unique_id=36451163 instance=ExtResource("1_br8hr")]
+
+[node name="mediano" parent="Node2D/muro9" unique_id=1869181953 instance=ExtResource("2_no5ke")]
+position = Vector2(490, -8)
+
+[node name="pequeño" parent="Node2D/muro9" unique_id=320797773 instance=ExtResource("3_ihqb0")]
+position = Vector2(857, -8)
+
+[node name="muro10" type="Node2D" parent="Node2D" unique_id=902506086]
+position = Vector2(54, 1665)
+rotation = -1.5707964
+
+[node name="Walls" parent="Node2D/muro10" unique_id=540770104 instance=ExtResource("1_br8hr")]
+position = Vector2(14, -7)
+
+[node name="mediano" parent="Node2D/muro10" unique_id=480215560 instance=ExtResource("2_no5ke")]
+position = Vector2(490, -8)
+
+[node name="pequeño" parent="Node2D/muro10" unique_id=691074783 instance=ExtResource("3_ihqb0")]
+position = Vector2(857, -8)
+
+[node name="muro11" type="Node2D" parent="Node2D" unique_id=1718511124]
+position = Vector2(3278, 977)
+rotation = -1.5707964
+
+[node name="Walls" parent="Node2D/muro11" unique_id=555187845 instance=ExtResource("1_br8hr")]
+position = Vector2(-15, -494)
+rotation = 1.5707964
+
+[node name="mediano" parent="Node2D/muro11" unique_id=2049034815 instance=ExtResource("2_no5ke")]
+position = Vector2(490, -8)
+
+[node name="pequeño" parent="Node2D/muro11" unique_id=1734989731 instance=ExtResource("3_ihqb0")]
+position = Vector2(857, -8)
+
+[node name="pequeño2" parent="Node2D/muro11" unique_id=283930704 instance=ExtResource("3_ihqb0")]
+position = Vector2(124, -9.00007)
+
+[node name="muro12" type="Node2D" parent="Node2D" unique_id=1965553757]
+position = Vector2(1821, 1004)
+rotation = -3.1415927
+
+[node name="Walls" parent="Node2D/muro12" unique_id=1382680729 instance=ExtResource("1_br8hr")]
+
+[node name="mediano" parent="Node2D/muro12" unique_id=1951323321 instance=ExtResource("2_no5ke")]
+position = Vector2(490, -8)
+
+[node name="pequeño" parent="Node2D/muro12" unique_id=997557995 instance=ExtResource("3_ihqb0")]
+position = Vector2(857, -8)
+
+[node name="mediano2" parent="Node2D/muro12" unique_id=451239564 instance=ExtResource("2_no5ke")]
+position = Vector2(-489, -17.000084)
+
+[node name="muro13" type="Node2D" parent="Node2D" unique_id=1468113272]
+position = Vector2(589, 1994)
+rotation = -1.5707964
+
+[node name="Walls" parent="Node2D/muro13" unique_id=510240564 instance=ExtResource("1_br8hr")]
+
+[node name="mediano" parent="Node2D/muro13" unique_id=1461078257 instance=ExtResource("2_no5ke")]
+position = Vector2(490, -8)
+
+[node name="pequeño" parent="Node2D/muro13" unique_id=856090417 instance=ExtResource("3_ihqb0")]
+position = Vector2(857, -8)
