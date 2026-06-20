@@ -5,4 +5,4 @@ extends Resource
 class_name Mutation
 
 @export var mutation_name : String
-@export var animation : SpriteFrames
+@export var sprite_frames : SpriteFrames

@@ -12,13 +12,12 @@
 [sub_resource type="Resource" id="Resource_o6xl0"]
 script = ExtResource("3_sugp2")
 mutation_name = "Ojos"
-animation = ExtResource("5_tipki")
 metadata/_custom_type_script = "uid://pthluwe7a702"
 
 [sub_resource type="Resource" id="Resource_85g3d"]
 script = ExtResource("3_sugp2")
 mutation_name = "Ojos"
-animation = ExtResource("5_tipki")
+sprite_frames = ExtResource("5_tipki")
 metadata/_custom_type_script = "uid://pthluwe7a702"
 
 [node name="Main" type="Node" unique_id=1242729552]
