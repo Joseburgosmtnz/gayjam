@@ -1,15 +1,15 @@
-[gd_scene format=3 uid="uid://brcs3qntd74c2"]
+[gd_scene format=3 uid="uid://don44wiyjjrk6"]
 
-[ext_resource type="Texture2D" uid="uid://bxcryj4ouv5pk" path="res://assets/walls/wall_large.png" id="1_7bq0a"]
+[ext_resource type="Texture2D" uid="uid://bir4ltxkukjhb" path="res://assets/walls/wall_small.png" id="1_3wlmc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_au47s"]
-size = Vector2(741, 234)
+size = Vector2(235, 234)
 
 [node name="Wall" type="StaticBody2D" unique_id=1265586795]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=774872720]
-position = Vector2(-8.5, -1)
+position = Vector2(-1.5, -1)
 shape = SubResource("RectangleShape2D_au47s")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=248139715]
-texture = ExtResource("1_7bq0a")
+texture = ExtResource("1_3wlmc")
