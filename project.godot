@@ -15,6 +15,10 @@ run/main_scene="uid://bexb8nos7w5ta"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/characters/mainCharacter/icon.svg"
 
+[autoload]
+
+GameManager="*uid://bd4ffow6wv712"
+
 [input]
 
 forward={
