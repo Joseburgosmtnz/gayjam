@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mutation" format=3 uid="uid://bahy58pbboiex"]
+
+[ext_resource type="Script" uid="uid://pthluwe7a702" path="res://resources/mutation.gd" id="1_llsww"]
+[ext_resource type="SpriteFrames" uid="uid://lyogt5ev5k38" path="res://resources/animated sprites/nariz_sprite_frames.tres" id="2_llsww"]
+
+[resource]
+script = ExtResource("1_llsww")
+mutation_name = "Nariz"
+sprite_frames = ExtResource("2_llsww")
+metadata/_custom_type_script = "uid://pthluwe7a702"

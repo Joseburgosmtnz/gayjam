@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://lyogt5ev5k38"]
+
+[ext_resource type="Texture2D" uid="uid://bf2c17ly8t24y" path="res://assets/nariz_sprite_sheet.png" id="1_1awti"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xld6"]
+atlas = ExtResource("1_1awti")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3pn27"]
+atlas = ExtResource("1_1awti")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6elg"]
+atlas = ExtResource("1_1awti")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5mut"]
+atlas = ExtResource("1_1awti")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3e2ur"]
+atlas = ExtResource("1_1awti")
+region = Rect2(1024, 0, 256, 256)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xld6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3pn27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6elg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5mut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3e2ur")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b5q6dw4y4867f"]
+
+[ext_resource type="Texture2D" uid="uid://bkb1yx348tn6u" path="res://assets/pierna_sprite_sheet.png" id="1_u73jt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x43b3"]
+atlas = ExtResource("1_u73jt")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wadln"]
+atlas = ExtResource("1_u73jt")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ablb"]
+atlas = ExtResource("1_u73jt")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6rt6n"]
+atlas = ExtResource("1_u73jt")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uinf"]
+atlas = ExtResource("1_u73jt")
+region = Rect2(1024, 0, 256, 256)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x43b3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wadln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ablb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6rt6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7uinf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

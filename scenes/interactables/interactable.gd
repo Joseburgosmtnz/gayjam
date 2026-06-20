@@ -9,6 +9,7 @@ func _ready() -> void:
 	body_entered.connect(_on_body_entered)
 
 func _on_body_entered(body : Node2D) -> void:
+	print("_on_body_entered")
 	#Solo se interactua con el jugador por ahora
 	if body.is_in_group("Player"):
 		_on_interact(body)
@@ -16,6 +17,7 @@ func _on_body_entered(body : Node2D) -> void:
 #Se sobreescribe en las clases hijas para diferenciar
 #las interacciones
 func _on_interact(player : Node2D) -> void:
+	print("_on_interact")
 	emit_signal("interacted", player)
 	_on_interacted(player)
 	#_play_interaction_animation()

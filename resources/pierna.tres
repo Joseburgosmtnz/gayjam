@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mutation" format=3 uid="uid://bs1j2fv2krm03"]
+
+[ext_resource type="Script" uid="uid://pthluwe7a702" path="res://resources/mutation.gd" id="1_xoq04"]
+[ext_resource type="SpriteFrames" uid="uid://b5q6dw4y4867f" path="res://resources/animated sprites/piernas_sprite_frames.tres" id="2_xoq04"]
+
+[resource]
+script = ExtResource("1_xoq04")
+mutation_name = "Pierna"
+sprite_frames = ExtResource("2_xoq04")
+metadata/_custom_type_script = "uid://pthluwe7a702"

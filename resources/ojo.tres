@@ -6,5 +6,5 @@
 [resource]
 script = ExtResource("1_x6o4k")
 mutation_name = "Ojos"
-animation = ExtResource("1_06g1i")
+sprite_frames = ExtResource("1_06g1i")
 metadata/_custom_type_script = "uid://pthluwe7a702"

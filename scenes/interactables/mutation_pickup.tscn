@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bky137agmaxa3"]
 
 [ext_resource type="Script" uid="uid://ctinu0syvgumx" path="res://scenes/interactables/mutation_pickup.gd" id="1_lpsil"]
-[ext_resource type="SpriteFrames" uid="uid://bc1k1iw53peq7" path="res://resources/animated sprites/ojos_sprite_frames.tres" id="2_2bmeb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a4ias"]
 size = Vector2(130, 130)
@@ -14,5 +13,7 @@ metadata/_custom_type_script = "uid://owmn6b2k0na2"
 shape = SubResource("RectangleShape2D_a4ias")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1660267669]
-sprite_frames = ExtResource("2_2bmeb")
+scale = Vector2(0.55, 0.55)
 autoplay = "default"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
