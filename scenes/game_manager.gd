@@ -8,4 +8,4 @@ func restart() -> void:
 	get_tree().reload_current_scene()
 
 func _on_breakable_interacted(_player: Node2D) -> void:
-	restart()
+	get_tree().change_scene_to_file("res://scenes/control.tscn")

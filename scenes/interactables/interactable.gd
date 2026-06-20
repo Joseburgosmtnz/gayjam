@@ -7,6 +7,7 @@ signal interacted(who)
 func _ready() -> void:
 	#Conectamos la colision a nuestra propia funcion
 	body_entered.connect(_on_body_entered)
+	GameManager.register_breakable(self)
 
 func _on_body_entered(body : Node2D) -> void:
 	print("_on_body_entered")
