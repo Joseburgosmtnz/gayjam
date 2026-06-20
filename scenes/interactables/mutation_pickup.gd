@@ -11,6 +11,7 @@ func _on_interacted(player : Node2D) -> void:
 	# si la tiene ejecutamos la animacion de destruccion
 	print("El jugador ha interaccionado con el pickup")
 	print("El jugador adquiere la mutación")
+#	Comprobar que hay mutation_resource
 	player.mutations.append(mutation_resource)
 	
 	player.add_child(mutation_scene.instantiate())

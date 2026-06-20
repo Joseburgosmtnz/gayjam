@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mutation" format=3 uid="uid://mfxtk6wvl7dm"]
+
+[ext_resource type="SpriteFrames" uid="uid://bc1k1iw53peq7" path="res://resources/animated sprites/ojos_sprite_frames.tres" id="1_06g1i"]
+[ext_resource type="Script" uid="uid://pthluwe7a702" path="res://resources/mutation.gd" id="1_x6o4k"]
+
+[resource]
+script = ExtResource("1_x6o4k")
+mutation_name = "Ojos"
+animation = ExtResource("1_06g1i")
+metadata/_custom_type_script = "uid://pthluwe7a702"

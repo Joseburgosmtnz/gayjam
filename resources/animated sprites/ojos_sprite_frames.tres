@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bc1k1iw53peq7"]
+
+[ext_resource type="Texture2D" uid="uid://c58valo8q5by6" path="res://assets/characters/ojete_sprite_sheet.png" id="1_fugul"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrtc7"]
+atlas = ExtResource("1_fugul")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41xaw"]
+atlas = ExtResource("1_fugul")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17oc2"]
+atlas = ExtResource("1_fugul")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8augw"]
+atlas = ExtResource("1_fugul")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68475"]
+atlas = ExtResource("1_fugul")
+region = Rect2(1024, 0, 256, 256)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nrtc7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41xaw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17oc2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8augw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68475")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

@@ -13,7 +13,9 @@ func _on_interacted(player : Node2D) -> void:
 	print("El jugador ha interaccionado con el breakable")
 #	Lista de nombres de mutaciones del player
 	var mutation_names : Array 
+	print(player.mutations)
 	for m in player.mutations: 
+		print(m)
 		mutation_names.append(m.mutation_name)
 		
 	if mutation_required.mutation_name in mutation_names:

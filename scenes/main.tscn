@@ -4,13 +4,21 @@
 [ext_resource type="Script" uid="uid://pthluwe7a702" path="res://resources/mutation.gd" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://brcs3qntd74c2" path="res://scenes/walls/walls.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://chacum6w6lqyg" path="res://scenes/interactables/breakable.tscn" id="4_tbgi4"]
+[ext_resource type="SpriteFrames" uid="uid://bc1k1iw53peq7" path="res://resources/animated sprites/ojos_sprite_frames.tres" id="5_tipki"]
 [ext_resource type="PackedScene" uid="uid://bky137agmaxa3" path="res://scenes/interactables/mutation_pickup.tscn" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://don44wiyjjrk6" path="res://scenes/walls/walls2.tscn" id="7_tipki"]
 [ext_resource type="PackedScene" uid="uid://c1ntwca3fdj5f" path="res://scenes/walls/walls3.tscn" id="8_85g3d"]
 
 [sub_resource type="Resource" id="Resource_o6xl0"]
 script = ExtResource("3_sugp2")
-mutation_name = "Pierna"
+mutation_name = "Ojos"
+animation = ExtResource("5_tipki")
+metadata/_custom_type_script = "uid://pthluwe7a702"
+
+[sub_resource type="Resource" id="Resource_85g3d"]
+script = ExtResource("3_sugp2")
+mutation_name = "Ojos"
+animation = ExtResource("5_tipki")
 metadata/_custom_type_script = "uid://pthluwe7a702"
 
 [node name="Main" type="Node" unique_id=1242729552]
@@ -19,11 +27,12 @@ metadata/_custom_type_script = "uid://pthluwe7a702"
 position = Vector2(0, 5)
 
 [node name="Breakable" parent="." unique_id=761423331 instance=ExtResource("4_tbgi4")]
-position = Vector2(540, 7)
+position = Vector2(-627, 2567)
 mutation_required = SubResource("Resource_o6xl0")
 
 [node name="MutationPickUp" parent="." unique_id=730955900 instance=ExtResource("6_tefeu")]
 position = Vector2(-398, 7)
+mutation_resource = SubResource("Resource_85g3d")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1471557236]
 position = Vector2(-944, 618)

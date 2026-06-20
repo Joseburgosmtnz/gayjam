@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b6em01ul12x2a" path="res://assets/characters/mainCharacter/icon.svg" id="2_afik2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_afik2"]
-size = Vector2(130, 130)
+size = Vector2(300, 300)
 
 [node name="Breakable" type="Area2D" unique_id=761423331]
 script = ExtResource("1_rlys8")
@@ -14,4 +14,6 @@ metadata/_custom_type_script = "uid://owmn6b2k0na2"
 shape = SubResource("RectangleShape2D_afik2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=10310860]
+position = Vector2(0, 1)
+scale = Vector2(2.3359375, 2.3359375)
 texture = ExtResource("2_afik2")
