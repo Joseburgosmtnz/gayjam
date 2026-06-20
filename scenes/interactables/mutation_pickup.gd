@@ -9,6 +9,7 @@ var mutation_scene := preload("res://scenes/mutations/mutation.tscn")
 
 func _ready() -> void:
 	animated_sprite_2d.sprite_frames = mutation_resource.sprite_frames
+	animated_sprite_2d.play("default")
 
 func _on_interacted(player : Node2D) -> void:
 	# Comprobamos que el jugador posea la mutacion counter
