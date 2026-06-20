@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://bw3ra7di3tb0s" path="res://scenes/interactables/breakable.gd" id="1_rlys8"]
 [ext_resource type="Texture2D" uid="uid://b6em01ul12x2a" path="res://assets/characters/mainCharacter/icon.svg" id="2_afik2"]
-[ext_resource type="PackedScene" uid="uid://brcs3qntd74c2" path="res://scenes/walls/walls.tscn" id="3_gvroi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_afik2"]
 size = Vector2(130, 130)
@@ -16,5 +15,3 @@ shape = SubResource("RectangleShape2D_afik2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=10310860]
 texture = ExtResource("2_afik2")
-
-[node name="Wall" parent="." unique_id=1265586795 instance=ExtResource("3_gvroi")]
