@@ -1,15 +1,14 @@
 [gd_scene format=3 uid="uid://bc455drnubk8c"]
 
+[ext_resource type="Script" uid="uid://c48llbckm0kvf" path="res://scenes/player/main_character.gd" id="1_a25yj"]
 [ext_resource type="SpriteFrames" uid="uid://c6mbnfjl2idja" path="res://resources/animated sprites/ameba_sprite_sheet.tres" id="3_a25yj"]
 [ext_resource type="PackedScene" uid="uid://dq15f8gntssyv" path="res://scenes/player/PlayerMovement.tscn" id="4_8d5w8"]
-
-[sub_resource type="GDScript" id="GDScript_todl4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8d5w8"]
 radius = 100.0
 
 [node name="MainCharacter" type="CharacterBody2D" unique_id=1780575402 groups=["Player"]]
-script = SubResource("GDScript_todl4")
+script = ExtResource("1_a25yj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1847729948]
 sprite_frames = ExtResource("3_a25yj")

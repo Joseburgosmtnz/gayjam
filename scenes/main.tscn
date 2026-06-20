@@ -20,10 +20,12 @@ metadata/_custom_type_script = "uid://pthluwe7a702"
 [node name="Main" type="Node" unique_id=1242729552]
 
 [node name="MainCharacter" parent="." unique_id=560852654 instance=ExtResource("1_o5qli")]
+position = Vector2(0, 5)
 script = ExtResource("2_0wfyh")
 mutations = Array[ExtResource("3_sugp2")]([])
 
 [node name="Walls" parent="." unique_id=1265586795 instance=ExtResource("4_jyhfs")]
+position = Vector2(-192, -200)
 
 [node name="Breakable" parent="." unique_id=761423331 instance=ExtResource("4_tbgi4")]
 position = Vector2(389, -9)
@@ -32,5 +34,3 @@ mutation_required = SubResource("Resource_o6xl0")
 [node name="MutationPickUp" parent="." unique_id=730955900 instance=ExtResource("6_tefeu")]
 position = Vector2(-398, 7)
 mutation = SubResource("Resource_tefeu")
-
-[node name="Walls2" type="Node2D" parent="." unique_id=73658199]
