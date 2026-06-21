@@ -7,6 +7,7 @@ class_name Breakable
 
 # Se asigna una mutacion para que se destruya
 @export var mutation_required : Mutation
+@export var final : bool = false
 
 func _ready() -> void:
 	_assign_mutation_required_sprite()
@@ -22,6 +23,8 @@ func _on_interacted(player : Node2D) -> void:
 	for m in player.mutations: 
 		print(m)
 		mutation_names.append(m.mutation_name)
+		if final:
+			GameManager.ganar()
 		
 	if mutation_required.mutation_name in mutation_names:
 		print("El jugador tiene la mutación correcta, iniciamos interacción")

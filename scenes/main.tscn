@@ -2,24 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://dqo52mdekd2uo" path="res://assets/fondo.png" id="1_85g3d"]
 [ext_resource type="PackedScene" uid="uid://bc455drnubk8c" path="res://scenes/player/main_character.tscn" id="1_o5qli"]
-[ext_resource type="Script" uid="uid://pthluwe7a702" path="res://resources/mutation.gd" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://chacum6w6lqyg" path="res://scenes/interactables/breakable.tscn" id="4_tbgi4"]
 [ext_resource type="Resource" uid="uid://mfxtk6wvl7dm" path="res://resources/ojo.tres" id="5_tipki"]
 [ext_resource type="PackedScene" uid="uid://thfombhe2yp" path="res://scenes/muros.tscn" id="6_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://bky137agmaxa3" path="res://scenes/interactables/mutation_pickup.tscn" id="6_tefeu"]
 [ext_resource type="Resource" uid="uid://bahy58pbboiex" path="res://resources/nariz.tres" id="7_tipki"]
 [ext_resource type="Resource" uid="uid://bs1j2fv2krm03" path="res://resources/pierna.tres" id="8_85g3d"]
-[ext_resource type="PackedScene" uid="uid://cao7luv0b3flv" path="res://scenes/interactables/breakableGanar.tscn" id="10_choun"]
-
-[sub_resource type="Resource" id="Resource_tipki"]
-script = ExtResource("3_sugp2")
-mutation_name = "Ojos"
-metadata/_custom_type_script = "uid://pthluwe7a702"
-
-[sub_resource type="Resource" id="Resource_o6xl0"]
-script = ExtResource("3_sugp2")
-mutation_name = "Pierna"
-metadata/_custom_type_script = "uid://pthluwe7a702"
 
 [node name="Main" type="Node" unique_id=1242729552]
 
@@ -36,11 +24,12 @@ position = Vector2(0, 5)
 
 [node name="BreakableOjos" parent="." unique_id=761423331 instance=ExtResource("4_tbgi4")]
 position = Vector2(2025, -682)
-mutation_required = SubResource("Resource_tipki")
+mutation_required = ExtResource("8_85g3d")
 
 [node name="BreakablePierna" parent="." unique_id=1737908459 instance=ExtResource("4_tbgi4")]
 position = Vector2(2045, 675)
-mutation_required = SubResource("Resource_o6xl0")
+mutation_required = ExtResource("8_85g3d")
+final = true
 
 [node name="Muros" parent="." unique_id=899844250 instance=ExtResource("6_o6xl0")]
 
@@ -59,6 +48,3 @@ mutation_resource = ExtResource("8_85g3d")
 [node name="MutationPickUpPierna" parent="." unique_id=470475478 instance=ExtResource("6_tefeu")]
 position = Vector2(4782, -359)
 mutation_resource = ExtResource("8_85g3d")
-
-[node name="BreakableGanar" parent="." unique_id=1303768085 instance=ExtResource("10_choun")]
-position = Vector2(3777, -5)
