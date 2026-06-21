@@ -1,11 +1,10 @@
 extends Node
 
+var ganador: BreakableGanar
 
-func register_breakable(breakable: Interactable) -> void:
-	breakable.interacted.connect(_on_breakable_interacted)
 
 func restart() -> void:
 	get_tree().change_scene_to_file("res://scenes/Main.tscn")
 
-func _on_breakable_interacted(_player: Node2D) -> void:
+func ganar():
 	get_tree().change_scene_to_file("res://scenes/creditos.tscn")

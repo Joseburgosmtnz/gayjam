@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cao7luv0b3flv"]
+
+[ext_resource type="Script" uid="uid://b6fg1llj7sira" path="res://scenes/interactables/breakable_ganar.gd" id="1_ktmae"]
+[ext_resource type="Texture2D" uid="uid://b6em01ul12x2a" path="res://assets/characters/mainCharacter/icon.svg" id="2_7l7h4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ktmae"]
+size = Vector2(300, 300)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7l7h4"]
+size = Vector2(300, 300)
+
+[node name="BreakableGanar" type="Area2D" unique_id=1303768085]
+script = ExtResource("1_ktmae")
+metadata/_custom_type_script = "uid://b6fg1llj7sira"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=716361554]
+shape = SubResource("RectangleShape2D_ktmae")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=862378932]
+position = Vector2(0, 1)
+scale = Vector2(2.336, 2.336)
+texture = ExtResource("2_7l7h4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1739902837]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=797712285]
+shape = SubResource("RectangleShape2D_7l7h4")
