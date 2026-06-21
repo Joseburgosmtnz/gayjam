@@ -51,6 +51,10 @@ mutation_resource = ExtResource("5_tipki")
 position = Vector2(-674, -2839)
 mutation_resource = ExtResource("7_tipki")
 
+[node name="MutationPickUpPierna2" parent="." unique_id=839795462 instance=ExtResource("6_tefeu")]
+position = Vector2(4835, 312)
+mutation_resource = ExtResource("8_85g3d")
+
 [node name="MutationPickUpPierna" parent="." unique_id=470475478 instance=ExtResource("6_tefeu")]
-position = Vector2(4590, -82)
+position = Vector2(4782, -359)
 mutation_resource = ExtResource("8_85g3d")
