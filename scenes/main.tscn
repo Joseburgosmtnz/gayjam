@@ -20,16 +20,20 @@ texture = ExtResource("1_85g3d")
 stretch_mode = 1
 
 [node name="MainCharacter" parent="." unique_id=560852654 instance=ExtResource("1_o5qli")]
-position = Vector2(0, 5)
+position = Vector2(-1261, -2)
 
 [node name="BreakableOjos" parent="." unique_id=761423331 instance=ExtResource("4_tbgi4")]
 position = Vector2(2025, -682)
-mutation_required = ExtResource("8_85g3d")
+mutation_required = ExtResource("5_tipki")
+
+[node name="BreakableFinal" parent="." unique_id=1833888985 instance=ExtResource("4_tbgi4")]
+position = Vector2(-1985, 41)
+mutation_required = ExtResource("7_tipki")
+final = true
 
 [node name="BreakablePierna" parent="." unique_id=1737908459 instance=ExtResource("4_tbgi4")]
 position = Vector2(2045, 675)
 mutation_required = ExtResource("8_85g3d")
-final = true
 
 [node name="Muros" parent="." unique_id=899844250 instance=ExtResource("6_o6xl0")]
 

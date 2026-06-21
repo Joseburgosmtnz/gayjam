@@ -44,12 +44,13 @@ func _on_interacted(player : Node2D) -> void:
 	m.get_node("AnimatedSprite2D").play("default")
 	
 	if mutation_resource.mutation_name == "Pierna":
-		var posicion_exacta = pierna_posible_positions[randi_range(0, 3)]
+		var size = pierna_posible_positions.size()
+		var posicion_exacta = pierna_posible_positions.pop_at(randi() % size)
 		print("Pierna:", posicion_exacta)
 		m.rotation = deg_to_rad(posicion_exacta["rotation"])
 		m.position = posicion_exacta["position"]
 		
-		var random_scale = randf_range(0.2, 0.8)
+		var random_scale = randf_range(0.4, 0.8)
 		m.scale = Vector2(
 			random_scale*posicion_exacta["scale"][0], 
 			random_scale*posicion_exacta["scale"][1]
