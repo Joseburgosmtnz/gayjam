@@ -35,8 +35,8 @@ func _ready() -> void:
 func _on_interacted(player : Node2D) -> void:
 	# Comprobamos que el jugador posea la mutacion counter
 	# si la tiene ejecutamos la animacion de destruccion
-	print("El jugador ha interaccionado con el pickup")
-	print("El jugador adquiere la mutación")
+	#print("El jugador ha interaccionado con el pickup")
+	#print("El jugador adquiere la mutación")
 #	Comprobar que hay mutation_resource
 	player.mutations.append(mutation_resource)
 	var m = mutation_scene.instantiate()
@@ -46,7 +46,7 @@ func _on_interacted(player : Node2D) -> void:
 	if mutation_resource.mutation_name == "Pierna":
 		var size = pierna_posible_positions.size()
 		var posicion_exacta = pierna_posible_positions.pop_at(randi() % size)
-		print("Pierna:", posicion_exacta)
+		#print("Pierna:", posicion_exacta)
 		m.rotation = deg_to_rad(posicion_exacta["rotation"])
 		m.position = posicion_exacta["position"]
 		
@@ -57,7 +57,7 @@ func _on_interacted(player : Node2D) -> void:
 		)
 	elif mutation_resource.mutation_name == "Ojos":
 		var posicion_exacta = ojo_posible_positions[randi_range(0, 3)]
-		print("Ojo:", posicion_exacta)
+		#print("Ojo:", posicion_exacta)
 		m.rotation = deg_to_rad(posicion_exacta["rotation"])
 		m.position = posicion_exacta["position"]
 		
@@ -66,7 +66,7 @@ func _on_interacted(player : Node2D) -> void:
 		
 	elif mutation_resource.mutation_name == "Nariz":
 		var posicion_exacta = nariz_posible_positions[randi_range(0, 0)]
-		print("Nariz:", posicion_exacta)
+		#print("Nariz:", posicion_exacta)
 		m.rotation = deg_to_rad(posicion_exacta["rotation"])
 		m.position = posicion_exacta["position"]
 		
