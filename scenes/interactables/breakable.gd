@@ -16,18 +16,18 @@ func _ready() -> void:
 func _on_interacted(player : Node2D) -> void:
 	# Comprobamos que el jugador posea la mutacion counter
 	# si la tiene ejecutamos la animacion de destruccion
-	print("El jugador ha interaccionado con el breakable")
+	#print("El jugador ha interaccionado con el breakable")
 #	Lista de nombres de mutaciones del player
 	var mutation_names : Array 
-	print(player.mutations)
+	#print(player.mutations)
 	for m in player.mutations: 
-		print(m)
+		#print(m)
 		mutation_names.append(m.mutation_name)
 		if final:
 			GameManager.ganar()
 		
 	if mutation_required.mutation_name in mutation_names:
-		print("El jugador tiene la mutación correcta, iniciamos interacción")
+		#print("El jugador tiene la mutación correcta, iniciamos interacción")
 		_play_interaction_animation()
 
 func _assign_mutation_required_sprite():
