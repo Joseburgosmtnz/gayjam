@@ -7,6 +7,27 @@ class_name MutationPickUp
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 var mutation_scene := preload("res://scenes/mutations/mutation.tscn")
 
+var pierna_posible_positions = [
+	{"rotation":0, "position":Vector2(85, 85), "scale":Vector2(1, 1)},
+	{"rotation":0, "position":Vector2(-85, 85), "scale":Vector2(-1, 1)},
+	{"rotation":0, "position":Vector2(85, -85), "scale":Vector2(1, -1)},
+	{"rotation":0, "position":Vector2(-85, -85), "scale":Vector2(-1, -1)},
+]
+
+var ojo_posible_positions = [
+	{"rotation":0, "position":Vector2(0, -110)},
+	{"rotation":90, "position":Vector2(110, 0)},
+	{"rotation":180, "position":Vector2(0, 110)},
+	{"rotation":270, "position":Vector2(-110, 0)},
+]
+
+var nariz_posible_positions = [
+	{"rotation":10, "position":Vector2(0, 0)},
+	#{"rotation":90, "position":Vector2(110, 0)},
+	#{"rotation":180, "position":Vector2(0, 110)},
+	#{"rotation":270, "position":Vector2(-110, 0)},
+]
+
 func _ready() -> void:
 	animated_sprite_2d.sprite_frames = mutation_resource.sprite_frames
 	animated_sprite_2d.play("default")
@@ -20,12 +41,37 @@ func _on_interacted(player : Node2D) -> void:
 	player.mutations.append(mutation_resource)
 	var m = mutation_scene.instantiate()
 	m.get_node("AnimatedSprite2D").sprite_frames = mutation_resource.sprite_frames
-	
 	m.get_node("AnimatedSprite2D").play("default")
-	m.rotation = randf_range(0, 360)
-	var random_scale = randf_range(0.2, 0.8)
-	m.scale = Vector2(random_scale, random_scale)
-	m.position = Vector2(randf_range(-75, 75), randf_range(-75, 75))
+	
+	if mutation_resource.mutation_name == "Pierna":
+		var posicion_exacta = pierna_posible_positions[randi_range(0, 3)]
+		print("Pierna:", posicion_exacta)
+		m.rotation = deg_to_rad(posicion_exacta["rotation"])
+		m.position = posicion_exacta["position"]
+		
+		var random_scale = randf_range(0.2, 0.8)
+		m.scale = Vector2(
+			random_scale*posicion_exacta["scale"][0], 
+			random_scale*posicion_exacta["scale"][1]
+		)
+	elif mutation_resource.mutation_name == "Ojos":
+		var posicion_exacta = ojo_posible_positions[randi_range(0, 3)]
+		print("Ojo:", posicion_exacta)
+		m.rotation = deg_to_rad(posicion_exacta["rotation"])
+		m.position = posicion_exacta["position"]
+		
+		var random_scale = randf_range(0.3, 0.65)
+		m.scale = Vector2(random_scale, random_scale)
+		
+	elif mutation_resource.mutation_name == "Nariz":
+		var posicion_exacta = nariz_posible_positions[randi_range(0, 0)]
+		print("Nariz:", posicion_exacta)
+		m.rotation = deg_to_rad(posicion_exacta["rotation"])
+		m.position = posicion_exacta["position"]
+		
+		var random_scale = randf_range(0.2, 0.8)
+		m.scale = Vector2(random_scale, random_scale)
+	
 	player.add_child(m)
 	
 	_play_interaction_animation()
