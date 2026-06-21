@@ -6,3 +6,4 @@ class_name Mutation
 
 @export var mutation_name : String
 @export var sprite_frames : SpriteFrames
+@export var texture : Texture

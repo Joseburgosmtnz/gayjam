@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://chacum6w6lqyg"]
 
 [ext_resource type="Script" uid="uid://bw3ra7di3tb0s" path="res://scenes/interactables/breakable.gd" id="1_rlys8"]
-[ext_resource type="Texture2D" uid="uid://b6em01ul12x2a" path="res://assets/characters/mainCharacter/icon.svg" id="2_afik2"]
+[ext_resource type="Texture2D" uid="uid://d82iqtnmqerd" path="res://assets/bloqueo.png" id="2_gvroi"]
+[ext_resource type="Texture2D" uid="uid://cucovlnqj0o3o" path="res://assets/popup.png" id="3_gvroi"]
+[ext_resource type="Texture2D" uid="uid://dqo52mdekd2uo" path="res://assets/fondo.png" id="4_l6f65"]
+[ext_resource type="Texture2D" uid="uid://cfv4xbknd6xh5" path="res://assets/fotograma0004.png" id="4_rpdbs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_afik2"]
 size = Vector2(320, 320)
@@ -15,8 +18,7 @@ metadata/_custom_type_script = "uid://owmn6b2k0na2"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=10310860]
 position = Vector2(0, 1)
-scale = Vector2(2.3359375, 2.3359375)
-texture = ExtResource("2_afik2")
+texture = ExtResource("2_gvroi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=352774089]
 shape = SubResource("RectangleShape2D_afik2")
@@ -25,3 +27,30 @@ shape = SubResource("RectangleShape2D_afik2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1522021871]
 shape = SubResource("RectangleShape2D_gvroi")
+
+[node name="Pompa" type="Sprite2D" parent="." unique_id=237533710]
+z_index = 1
+position = Vector2(222, -219)
+texture = ExtResource("3_gvroi")
+
+[node name="ColorRect" type="TextureRect" parent="Pompa" unique_id=1525785794]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -86.0
+offset_top = -98.0
+offset_right = -153.0
+offset_bottom = -173.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_l6f65")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="MutationRequiredSprite" type="Sprite2D" parent="Pompa" unique_id=177892702]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_rpdbs")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

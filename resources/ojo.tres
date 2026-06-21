@@ -2,9 +2,11 @@
 
 [ext_resource type="SpriteFrames" uid="uid://bc1k1iw53peq7" path="res://resources/animated sprites/ojos_sprite_frames.tres" id="1_06g1i"]
 [ext_resource type="Script" uid="uid://pthluwe7a702" path="res://resources/mutation.gd" id="1_x6o4k"]
+[ext_resource type="Texture2D" uid="uid://cfv4xbknd6xh5" path="res://assets/fotograma0004.png" id="3_cksy6"]
 
 [resource]
 script = ExtResource("1_x6o4k")
 mutation_name = "Ojos"
 sprite_frames = ExtResource("1_06g1i")
+texture = ExtResource("3_cksy6")
 metadata/_custom_type_script = "uid://pthluwe7a702"

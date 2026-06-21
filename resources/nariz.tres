@@ -2,9 +2,11 @@
 
 [ext_resource type="Script" uid="uid://pthluwe7a702" path="res://resources/mutation.gd" id="1_llsww"]
 [ext_resource type="SpriteFrames" uid="uid://lyogt5ev5k38" path="res://resources/animated sprites/nariz_sprite_frames.tres" id="2_llsww"]
+[ext_resource type="Texture2D" uid="uid://dhnh30vvwkfo6" path="res://assets/nariz0003.png" id="3_f4k1d"]
 
 [resource]
 script = ExtResource("1_llsww")
 mutation_name = "Nariz"
 sprite_frames = ExtResource("2_llsww")
+texture = ExtResource("3_f4k1d")
 metadata/_custom_type_script = "uid://pthluwe7a702"
