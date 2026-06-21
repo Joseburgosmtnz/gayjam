@@ -1,33 +1,44 @@
 [gd_scene format=3 uid="uid://ckdnvh0nmg5ok"]
 
-[ext_resource type="Script" uid="uid://b7sm63r37bd2" path="res://scenes/creditos.gd" id="1_spoww"]
 [ext_resource type="Script" uid="uid://6vw73xc8ppjs" path="res://scenes/control.gd" id="2_6yhot"]
 
 [node name="Creditos" type="Node" unique_id=1997905841]
-script = ExtResource("1_spoww")
 
 [node name="Control" type="Control" parent="." unique_id=581316007]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 1158.0
+offset_bottom = 640.0
 script = ExtResource("2_6yhot")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=745253803]
-offset_right = 40.0
-offset_bottom = 40.0
-color = Color(0, 0, 0, 1)
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=657335662]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -10.0
+offset_right = 1156.0
+offset_bottom = 639.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=657335662]
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=225844108]
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/VBoxContainer" unique_id=225844108]
 layout_mode = 2
 text = "Juego nombre juego
 Desarrollado por:
 Para la GameJam:"
 
-[node name="Button" type="Button" parent="VBoxContainer" unique_id=1494117088]
+[node name="Button" type="Button" parent="Control/VBoxContainer" unique_id=1494117088]
 layout_mode = 2
 text = "Reiniciar"
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/Button" unique_id=745253803]
+layout_mode = 0
+offset_top = 35.0
+offset_right = 1147.0
+offset_bottom = 650.0
+color = Color(0, 0, 0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="Control" unique_id=500383607]
+position = Vector2(-1, -3)
+anchor_mode = 0
+
+[connection signal="pressed" from="Control/VBoxContainer/Button" to="Control" method="_on_button_pressed"]
